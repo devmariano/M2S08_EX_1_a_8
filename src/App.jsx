@@ -1,18 +1,29 @@
 import './App.css'
 
-import Header from './components/Header/Header'
-import Banner from './components/Banner/Banner'
-import Main from './components/Main/Main'
-import Footer from './components/Footer/Footer'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+
+
+
+import HomePage from './pages/HomePage/HomePage'
+import ContactPage from './pages/ContactPage/ContactPage'
+import ProductPage from './pages/ProductPage/ProductPage'
+import FaqPage from './pages/FaqPage/FaqPage'
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage'
+
 
 function App() {
 
   return (
     <>
-    <Header/>
-    <Banner texto="Os melhores cursos DEV"/>
-    <Main/>
-   <Footer/>
+      <Router>
+        <Routes>
+          <Route path='/' element={<HomePage/>} />
+          <Route path='/contacts' element={<ContactPage/>} />
+          <Route path='/products' element={<ProductPage/>} />
+          <Route path='/faq' element={<FaqPage/>} />
+          <Route path='*' element={<NotFoundPage/>} />
+        </Routes>
+      </Router>
     </>
   )
 }

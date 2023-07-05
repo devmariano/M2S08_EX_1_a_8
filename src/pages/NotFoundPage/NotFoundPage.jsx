@@ -1,20 +1,20 @@
-import './ContactPage.css'
+import './NotFoundPage.css'
 
 
 import Header from '../../components/Header/Header'
 import Banner from '../../components/Banner/Banner'
 import Footer from '../../components/Footer/Footer'
 
-function ContactPage() {
+function NotFoundPage() {
 
   return (
     <>
     <Header/>
-    <Banner texto="Entre em contato conosco"/>
-    Contact page is render
+    <Banner texto="Não encontrada 404"/>
+    NotFoundPage is render 404
     <Footer/>
     </>
   )
 }
 
-export default ContactPage
+export default NotFoundPage

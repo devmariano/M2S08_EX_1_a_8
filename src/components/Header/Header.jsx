@@ -7,11 +7,11 @@ function Header() {
     return ( 
         <nav className='menu-principal-wrapper'>
             <div className='logo-wrapper'>
-                <img src={logo} alt="Logotipo" />
+            <a href="/"><img src={logo} alt="Logotipo" /></a>
             </div>
                 <ul className='menu-wrapper'>
-                    <li><a href="/cursos">Cursos</a></li>
-                    <li><a href="/contatos">Contatos</a></li>
+                    <li><a href="/products">Cursos</a></li>
+                    <li><a href="/contacts">Contatos</a></li>
                     <li><a href="/faq">FAQ</a></li>
                 </ul>
         </nav>

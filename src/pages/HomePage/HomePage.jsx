@@ -1,20 +1,20 @@
-import './ContactPage.css'
-
+import './HomePage.css'
 
 import Header from '../../components/Header/Header'
 import Banner from '../../components/Banner/Banner'
+import Main from '../../components/Main/Main'
 import Footer from '../../components/Footer/Footer'
 
-function ContactPage() {
+function HomePage() {
 
   return (
     <>
     <Header/>
-    <Banner texto="Entre em contato conosco"/>
-    Contact page is render
-    <Footer/>
+    <Banner texto="Os melhores cursos DEV"/>
+    <Main/>
+   <Footer/>
     </>
   )
 }
 
-export default ContactPage
+export default HomePage

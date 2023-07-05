@@ -1,20 +1,20 @@
-import './ContactPage.css'
+import './ProductPage.css'
 
 
 import Header from '../../components/Header/Header'
 import Banner from '../../components/Banner/Banner'
 import Footer from '../../components/Footer/Footer'
 
-function ContactPage() {
+function ProductPage() {
 
   return (
     <>
     <Header/>
-    <Banner texto="Entre em contato conosco"/>
-    Contact page is render
+    <Banner texto="Product page"/>
+    Product Page is render
     <Footer/>
     </>
   )
 }
 
-export default ContactPage
+export default ProductPage
