@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../../assets/logo.png'
 import './header.css'
 
@@ -7,12 +8,12 @@ function Header() {
     return ( 
         <nav className='menu-principal-wrapper'>
             <div className='logo-wrapper'>
-            <a href="/"><img src={logo} alt="Logotipo" /></a>
+            <Link to={'/'}><img src={logo} alt="Logotipo" /></Link>
             </div>
                 <ul className='menu-wrapper'>
-                    <li><a href="/products">Cursos</a></li>
-                    <li><a href="/contacts">Contatos</a></li>
-                    <li><a href="/faq">FAQ</a></li>
+                <li ><Link to={'/products'}>Cursos</Link></li>
+                <li><Link to={'/contacts'}>Contatos</Link></li>
+                <li><Link to={'/faq'}>FAQ</Link></li>
                 </ul>
         </nav>
     );
