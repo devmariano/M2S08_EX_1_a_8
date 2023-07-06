@@ -5,6 +5,8 @@ import { BannerContext } from '../../contexts/BannerContext';
 import Header from '../../components/Header/Header'
 import Banner from '../../components/Banner/Banner'
 import Footer from '../../components/Footer/Footer'
+import FormContato from '../../components/FormContato/FormContato'
+import CardContato from '../../components/CardContato/CardContato'
 
 
 function ContactPage() {
@@ -20,7 +22,8 @@ function ContactPage() {
     <>
     <Header/>
     <Banner titulo={titulo} subTitulo={subTitulo} />
-    Contact page is render
+    <FormContato/>
+    <CardContato/>
     <Footer/>
     </>
   )
