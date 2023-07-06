@@ -5,6 +5,7 @@ import { BannerContext } from '../../contexts/BannerContext';
 import Header from '../../components/Header/Header'
 import Banner from '../../components/Banner/Banner'
 import Footer from '../../components/Footer/Footer'
+import error from '../../assets/error404.jpg'
 
 function NotFoundPage() {
 
@@ -19,7 +20,15 @@ function NotFoundPage() {
     <>
     <Header/>
     <Banner titulo={titulo} subTitulo={subTitulo} />
-    NotFoundPage is render 404
+    <div className="not-found-container">
+      <p className="not-found-text">Ops! Página não encontrada.</p>
+      <img
+        src={error}
+        alt="404 Not Found"
+        className="not-found-image"
+      />
+      <p className="not-found-suggestion">Que tal explorar outras páginas?</p>
+    </div>
     <Footer/>
     </>
   )
